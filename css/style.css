@@ -231,6 +231,7 @@ h3 {
 }
 
 .bg-img {
+    background-image: url('img/background-img/neural.png') !important;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
