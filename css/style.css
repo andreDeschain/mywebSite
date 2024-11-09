@@ -6381,23 +6381,32 @@ h6 {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #122f44; /* Colore coerente con il tema */
+  background-color: rgba(18, 47, 68, 0.9); /* Blu scuro semi-trasparente */
   color: #ffffff;
   padding: 15px;
   text-align: center;
   font-size: 14px;
   z-index: 1000;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Leggera ombra */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
   display: none; /* Nascondi inizialmente */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#cookie-banner p {
+  margin: 0;
+  display: inline-block;
+  font-size: 16px;
+  color: #ffffff; /* Bianco per contrasto */
 }
 
 #cookie-banner a {
-  color: #b2ebf2; /* Colore azzurro chiaro per contrasto */
+  color: #80deea; /* Azzurro chiaro per link */
   text-decoration: underline;
 }
 
 #cookie-banner button {
-  background-color: #b2ebf2; /* Colore chiaro per il bottone */
+  background-color: #80deea; /* Azzurro chiaro per bottone */
   color: #122f44;
   border: none;
   padding: 8px 15px;
@@ -6409,5 +6418,5 @@ h6 {
 }
 
 #cookie-banner button:hover {
-  background-color: #80deea; /* Leggermente più scuro al passaggio del mouse */
+  background-color: #4dd0e1; /* Un azzurro più intenso al passaggio del mouse */
 }
