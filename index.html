@@ -34,7 +34,7 @@
                             <div class="header-top-menu">
                                 <nav>
                                     <ul>
-                                        <li><a href="">This page is a work in progress - stay tuned</a></li>
+                                        <li><a href=""></a></li>
                                        <!-- <li><a href="review.html">Review</a></li>
                                         <li><a href="faq.html">FAQ</a></li> -->
                                     </ul>
@@ -215,7 +215,36 @@
     </footer>
     <!-- footer-end -->
 
+<!-- Inserisci qui il banner dei cookie, prima del </body> -->
+  <div id="cookie-banner" style="display: none;">
+    <p>This website does not collect cookies, but having a banner is trendy.</p>
+    <button id="accept-cookies">Accept</button>
+  </div>
+
+
     <!-- JS here -->
+
+
+  <!-- Codice JavaScript per il funzionamento del banner -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Mostra il banner solo se l'utente non ha già accettato i cookie
+    if (!localStorage.getItem("cookiesAccepted")) {
+      const banner = document.getElementById("cookie-banner");
+      banner.style.display = "block";
+      
+      // Imposta un timer per nascondere il banner dopo 5 secondi
+      setTimeout(() => {
+        banner.style.display = "none";
+      }, 5000);
+
+      document.getElementById("accept-cookies").addEventListener("click", function() {
+        localStorage.setItem("cookiesAccepted", "true");
+        banner.style.display = "none";
+      });
+    }
+  });
+</script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
