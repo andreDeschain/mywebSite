@@ -6381,41 +6381,33 @@ h6 {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f0f4c3; /* Giallo pastello chiaro */
-  color: #333;
+  background-color: #122f44; /* Colore coerente con il tema */
+  color: #ffffff;
   padding: 15px;
   text-align: center;
-  font-size: 16px;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Ombra per sollevare il banner */
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  z-index: 1000;
-}
-
-#cookie-banner p {
-  margin: 0;
-  padding: 0;
-  display: inline;
   font-size: 14px;
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Leggera ombra */
+  display: none; /* Nascondi inizialmente */
 }
 
 #cookie-banner a {
-  color: #00796b; /* Verde acqua */
+  color: #b2ebf2; /* Colore azzurro chiaro per contrasto */
   text-decoration: underline;
 }
 
 #cookie-banner button {
-  background-color: #81c784; /* Verde pastello chiaro */
-  color: white;
+  background-color: #b2ebf2; /* Colore chiaro per il bottone */
+  color: #122f44;
   border: none;
   padding: 8px 15px;
   margin-left: 15px;
   cursor: pointer;
-  border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s; /* Effetto transizione */
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 #cookie-banner button:hover {
-  background-color: #66bb6a; /* Verde leggermente più scuro */
+  background-color: #80deea; /* Leggermente più scuro al passaggio del mouse */
 }
