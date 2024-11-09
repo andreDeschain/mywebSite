@@ -215,7 +215,29 @@
     </footer>
     <!-- footer-end -->
 
+<!-- Inserisci qui il banner dei cookie, prima del </body> -->
+  <div id="cookie-banner" style="display: none;">
+    <p>Questo sito utilizza i cookie per migliorare la tua esperienza. <a href="/privacy-policy.html">Leggi di più</a></p>
+    <button id="accept-cookies">Accetta</button>
+  </div>
+
+
     <!-- JS here -->
+
+
+  <!-- Codice JavaScript per il funzionamento del banner -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (!localStorage.getItem("cookiesAccepted")) {
+        document.getElementById("cookie-banner").style.display = "block";
+      }
+
+      document.getElementById("accept-cookies").addEventListener("click", function() {
+        localStorage.setItem("cookiesAccepted", "true");
+        document.getElementById("cookie-banner").style.display = "none";
+      });
+    });
+  </script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
