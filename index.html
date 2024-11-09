@@ -227,17 +227,24 @@
 
   <!-- Codice JavaScript per il funzionamento del banner -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      if (!localStorage.getItem("cookiesAccepted")) {
-        document.getElementById("cookie-banner").style.display = "block";
-      }
+  document.addEventListener("DOMContentLoaded", function() {
+    // Mostra il banner solo se l'utente non ha già accettato i cookie
+    if (!localStorage.getItem("cookiesAccepted")) {
+      const banner = document.getElementById("cookie-banner");
+      banner.style.display = "block";
+      
+      // Imposta un timer per nascondere il banner dopo 5 secondi
+      setTimeout(() => {
+        banner.style.display = "none";
+      }, 5000);
 
       document.getElementById("accept-cookies").addEventListener("click", function() {
         localStorage.setItem("cookiesAccepted", "true");
-        document.getElementById("cookie-banner").style.display = "none";
+        banner.style.display = "none";
       });
-    });
-  </script>
+    }
+  });
+</script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
