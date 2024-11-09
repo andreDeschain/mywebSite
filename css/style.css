@@ -6377,3 +6377,26 @@ h6 {
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
 }
+
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+#cookie-banner button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
