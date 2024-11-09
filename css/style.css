@@ -6377,26 +6377,45 @@ h6 {
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
 }
-
 #cookie-banner {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #333;
-  color: white;
-  padding: 10px;
+  background-color: #f0f4c3; /* Giallo pastello chiaro */
+  color: #333;
+  padding: 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Ombra per sollevare il banner */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   z-index: 1000;
 }
 
-#cookie-banner button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  margin-left: 10px;
-  cursor: pointer;
+#cookie-banner p {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  font-size: 14px;
 }
 
+#cookie-banner a {
+  color: #00796b; /* Verde acqua */
+  text-decoration: underline;
+}
 
+#cookie-banner button {
+  background-color: #81c784; /* Verde pastello chiaro */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s; /* Effetto transizione */
+}
+
+#cookie-banner button:hover {
+  background-color: #66bb6a; /* Verde leggermente più scuro */
+}
